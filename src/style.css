@@ -1,0 +1,519 @@
+ /* ---------- Google Font Linked ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins&family=Roboto&display=swap');
+
+ /* ------ Common Styles / Utilities ------ */
+ body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ /* ------ Hero-Container Styles ------ */
+ header {
+  margin-top: 2%;
+ }
+
+ .hero-container {
+  display: flex;
+  width: 1321px;
+  height: 646px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+  background: #161616;
+ }
+
+ .hero-text {
+  margin-top: -10px;
+  margin-left: 66px;
+  color: white;
+  width: 100%;
+ }
+
+  .hero-text h1 {
+    font-weight: 700;
+    font-size: 65px;
+  }
+
+  .hero-text p {
+    margin-top: 40px;
+    font-size: 21px;
+  }
+
+ .hero-text a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: rgb(255, 55, 20);
+  border-radius: 5px;
+ }
+
+ .hero-image img{
+  margin-top: 25px;
+  width: 590px;
+ }
+
+ .hero-image:hover {
+  animation: identifier 0.5s  0.1s infinite alternate;
+ }
+
+ .half-width {
+  width: 100%;
+ }
+
+  /* ------ Main Section Styles ------ */
+  main {
+    margin: 5% 14% 20px;
+    display: grid;
+    gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .blog-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ------- Section Articles Styles ---------- */
+  .articles {
+    margin-left: 609px;
+    margin-right: 263px;
+    display: grid;
+    gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px; 
+  }
+
+  .view-all {
+    display: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .view-all a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: red;
+    border: #161616;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  /* ------ Side Card Styles ------ */
+  .side-card {
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;  
+  }
+
+  .card-details {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-top: 66px;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+
+  }
+  .card-details a {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+
+   .card-details .current-item {
+    background-color: #DD0000;
+    color: white;
+   }
+
+  /* ------ Blogs Section Styles ------ */
+
+  .blogs { 
+    display: flex;
+    width: 312px;
+    height: 366px;
+    border: 1px solid #dbdada;
+    border-radius: 11px;
+  }
+
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    flex-direction: row-reverse;
+  }
+  
+  .blog a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #16161693;
+    border-radius: 4px;
+    padding: 2px 10px;
+  } 
+  
+  .blog-image {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .blog-info {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .blog-icons {
+    padding-top: 10px;
+    display: flex ;
+    gap: 10px;
+  }
+
+  /* ----------- Footer Styles ------------ */
+  
+  footer {
+    color: white;
+    font-weight: 300;
+    margin-top: 5%;
+    padding-top: 50px;
+    height: 277px;
+    width: 100%;
+    background-color: #161616;
+  }
+ .footer-container h1{
+  text-align: center;
+  padding-bottom: 10px;
+ }
+
+ .footer-container hr {
+  width: 70vw;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  border-radius: 5px;
+ }
+
+ .page-list {
+  display: flex;  
+  justify-content: center;
+  gap: 44px;
+  padding: 25px 0;
+ }
+
+ .page-list a {
+  color: white;
+  text-decoration: none;
+ }
+
+ .social-icon {
+  padding: 22px 0;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+ }
+
+ @keyframes identifier {
+    0% {
+    margin-right: 70px;
+  }
+ }
+
+
+ /* ---------- Media Query (Mobile)-------------- */
+ @media screen and (max-width:777px) {
+
+ .hero-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+ }
+
+ .hero-text {
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 100%;
+ }
+
+  .hero-text h1 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    margin-top: 25px;
+    font-size: 17px;
+  }
+
+ .hero-image img{
+  margin-bottom: -7px;
+  margin-top: 50px;
+  width: 100%;
+ }
+
+  main {
+    margin: 25px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+  }
+
+  .articles {
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+  }
+
+  .side-card {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    background: none;
+  }
+
+  .card-details {
+    padding-top: 5px;
+    margin-bottom: -5px;
+  }
+
+  .card-details a {
+    background-color: #ffffffd5;
+    border: 1px solid #E8E8E8;
+  }
+
+  footer {
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .page-list {
+    display: grid;
+    text-align: center;
+ }
+ }
+
+
+ /* ---------- Media Query (Tablet)-------------- */
+  @media screen and (min-width:778px) and (max-width:1280px) {
+
+  .hero-container {
+  display: flex;
+  width: 90%;
+  height: 500px;
+ }
+
+ .hero-text {
+  margin-top: 25px;
+  margin-left: 66px;
+  color: white;
+  width: 500px;
+ }
+
+  .hero-text h1 {
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+ .hero-text a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: rgb(255, 55, 20);
+  border-radius: 5px;
+ }
+
+ .hero-image img{
+  margin-top: 25px;
+  width: 451px;
+ }
+
+ .hero-image:hover {
+  animation: none;
+ }
+
+ .half-width {
+  width: 100%;
+ }
+
+  /* ------ Main Section Styles ------ */
+  main {
+    margin: 0;
+    display: block;
+  }
+
+  .blog-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+  }
+
+  /* ------- Section Articles Styles ---------- */
+  .articles {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid ;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+ 
+  }
+
+  .view-all {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .view-all a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: red;
+    border: #161616;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  /* ------ Side Card Styles ------ */
+  .card-details {
+    display: flex;
+        flex-direction: row;
+  }
+  .side-card {
+    display: flex;
+
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    justify-content: center;
+    background: none;
+  }
+
+  .card-details {
+    padding-top: 5px;
+    margin-bottom: -5px;
+  }
+
+  .card-details a {
+    background-color: #ffffffd5;
+    border: 1px solid #E8E8E8;
+  }
+
+   .card-details .current-item {
+    background-color: #DD0000;
+    color: white;
+   }
+
+  /* ------ Blogs Section Styles ------ */
+
+  .blogs { 
+    display: flex;
+    width: 312px;
+    height: 366px;
+    border: 1px solid #dbdada;
+    border-radius: 11px;
+  }
+
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    flex-direction: row-reverse;
+  }
+  
+  .blog a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #16161693;
+    border-radius: 4px;
+    padding: 2px 10px;
+  } 
+  
+  .blog-image {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .blog-info {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .blog-icons {
+    padding-top: 10px;
+    display: flex ;
+    gap: 10px;
+  }
+
+  /* ----------- Footer Styles ------------ */
+  
+  footer {
+    color: white;
+    font-weight: 300;
+    margin-top: 5%;
+    padding-top: 50px;
+    height: 277px;
+    width: 100%;
+    background-color: #161616;
+  }
+ .footer-container h1{
+  text-align: center;
+  padding-bottom: 10px;
+ }
+
+ .footer-container hr {
+  width: 70vw;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  border-radius: 5px;
+ }
+
+ .page-list {
+  display: flex;  
+  justify-content: center;
+  gap: 44px;
+  padding: 25px 0;
+ }
+
+ .page-list a {
+  color: white;
+  text-decoration: none;
+ }
+
+ .social-icon {
+  padding: 22px 0;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+ }
+
+ }
+
+
+
+
+
