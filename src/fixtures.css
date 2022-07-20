@@ -70,7 +70,38 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* ------- Section Articles Styles ---------- */
+  .fixtures {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    height: 242px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+
+  .fixture {
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .fixtures-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .fixture img{
+    height: 56px;
+    width: 94px;
+  }
+
+  .fixtures-info {
+    text-align: center;
+  }
+
   .articles {
     display: grid;
     gap: 20px;
@@ -128,47 +159,7 @@
 
   /* ------ Blogs Section Styles ------ */
 
-  .blogs { 
-    display: flex;
-    width: 312px;
-    height: 366px;
-    border: 1px solid #dbdada;
-    border-radius: 11px;
-  }
-
-  .blog {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    flex-direction: row-reverse;
-  }
   
-  .blog a {
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    background-color: white;
-    border: 1px solid #16161693;
-    border-radius: 4px;
-    padding: 2px 10px;
-  } 
-  
-  .blog-image {
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .blog-info {
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-left: 15px;
-  }
-
-  .blog-icons {
-    padding-top: 10px;
-    display: flex ;
-    gap: 10px;
-  }
 
   /* ----------- Footer Styles ------------ */
   
@@ -373,27 +364,13 @@
     grid-template-columns: repeat(2, 333px);
   }
 
-  .blog-hide {
-    visibility: hidden;
-  }
-
   .view-all {
-    margin-top: -333px;
+    margin-top: 44px;
     margin-bottom: 55px;
     display: block;
     font-size: 20px;
     text-align: center;
   }
-
-  .blog a {
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    background-color: white;
-    border: 1px solid #16161693;
-    border-radius: 4px;
-    padding: 2px 10px;
-  } 
 
   footer {
     color: white;
@@ -416,9 +393,6 @@
   padding: 25px 0;
  }
    }
-
-   /* ---------- Styles Completed -------- */
-
-
+/* ------- ( Styles Completed ): ------- */
 
 
